@@ -134,7 +134,7 @@ nav {
 }
 
 /* ========================================================
-   HERO SECTION (INTACT FORMAT WITH image.jpeg)
+   HERO SECTION
    ======================================================== */
 .hero-split {
   padding: 115px 6% 45px;
@@ -174,51 +174,6 @@ nav {
   max-height: 460px;
   display: block;
   object-fit: cover;
-}
-
-.image-tag-overlay {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  right: 12px;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--border-light);
-  border-radius: 14px;
-  padding: 10px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: var(--shadow-sm);
-}
-
-.overlay-info .title {
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--text-main);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.overlay-info .subtitle {
-  font-size: 11px;
-  color: var(--text-muted);
-  font-weight: 600;
-}
-
-.wa-badge-btn {
-  background: #25D366;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 800;
-  padding: 7px 14px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  white-space: nowrap;
 }
 
 .hero-text-side {
@@ -312,7 +267,7 @@ nav {
 }
 
 /* ========================================================
-   SECTION 1: POLICY-SAFE FEATURE PILLARS (NO NUMBERS)
+   SECTION 1: FEATURE PILLARS
    ======================================================== */
 .metrics-island-section {
   padding: 10px 6% 35px;
@@ -367,7 +322,7 @@ nav {
 }
 
 /* ========================================================
-   SECTION 2: 3-COLUMN HOLIDAY PACKAGES CARDS WITH IMAGES
+   SECTION 2: HOLIDAY PACKAGES CARDS
    ======================================================== */
 .packages-section {
   padding: 55px 6%;
@@ -424,7 +379,6 @@ nav {
   box-shadow: var(--shadow-md);
 }
 
-/* Card Image Header */
 .tour-card-img-wrap {
   width: 100%;
   height: 190px;
@@ -769,158 +723,6 @@ footer {
 .float-wa:hover { transform: scale(1.08); }
 
 /* ========================================================
-   POPUP OVERLAY (INTACT OFFER BADGE UI)
-   ======================================================== */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(15, 23, 42, 0.7);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  z-index: 99999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal-banner-card {
-  width: 100%;
-  max-width: 440px;
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: 24px;
-  overflow: visible;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  position: relative;
-  transform: scale(0.9);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  padding: 38px 22px 24px;
-  text-align: center;
-}
-
-.modal-overlay.active .modal-banner-card {
-  transform: scale(1);
-}
-
-.modal-close-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 30px;
-  height: 30px;
-  background: #f1f5f9;
-  color: var(--text-main);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  cursor: pointer;
-  z-index: 10;
-  border: 1px solid var(--border-light);
-  transition: 0.2s;
-}
-
-.modal-close-btn:hover {
-  background: #fee2e2;
-  color: #ef4444;
-}
-
-.popup-pill-badge {
-  position: absolute;
-  top: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(135deg, var(--accent-coral), #ea580c);
-  color: #ffffff;
-  padding: 6px 18px;
-  border-radius: 50px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 800;
-  font-size: 11px;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  box-shadow: 0 6px 18px rgba(249, 115, 22, 0.4);
-  border: 2px solid #ffffff;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.popup-icon-wrap {
-  width: 58px;
-  height: 58px;
-  margin: 0 auto 14px;
-  border-radius: 16px;
-  background: #ecfdf5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  color: var(--primary-teal);
-}
-
-.popup-title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 21px;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 6px;
-  line-height: 1.3;
-}
-
-.popup-title span { color: var(--primary-teal); }
-
-.popup-desc {
-  font-size: 13px;
-  color: var(--text-muted);
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.popup-wa-btn {
-  background: #25D366;
-  color: #ffffff;
-  width: 100%;
-  padding: 13px;
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: 800;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-decoration: none;
-  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.3);
-  transition: 0.2s;
-}
-
-.popup-wa-btn:hover {
-  background: #20ba57;
-  transform: translateY(-2px);
-}
-
-.popup-subtext {
-  font-size: 11px;
-  color: #94a3b8;
-  margin-top: 10px;
-}
-
-/* ========================================================
    RESPONSIVE MEDIA QUERIES
    ======================================================== */
 @media (min-width: 768px) {
@@ -970,32 +772,6 @@ footer {
 </head>
 
 <body>
-
-<!-- ========================================================
-     MODAL POPUP OVERLAY (10% OFF TRAVEL OFFER)
-     ======================================================== -->
-<div class="modal-overlay" id="autoModal">
-  <div class="modal-banner-card" id="modalCard">
-    <div class="modal-close-btn" id="modalCloseBtn" title="Close Banner">✕</div>
-
-    <div class="popup-pill-badge">
-      <i class="fa-solid fa-plane-departure"></i> 10% OFF ON FIRST BOOKINGS
-    </div>
-
-    <div class="popup-icon-wrap">
-      <i class="fa-solid fa-compass"></i>
-    </div>
-
-    <h2 class="popup-title">Plan Your Trip With <span>Reddy Tours</span></h2>
-    <p class="popup-desc">Claim flat 10% discount on customized flight+hotel packages and outstation cabs. Instant quote on WhatsApp!</p>
-
-    <a href="#" data-wa class="popup-wa-btn" target="_blank" rel="noopener">
-      <i class="fa-brands fa-whatsapp"></i> Book Now on WhatsApp
-    </a>
-
-    <p class="popup-subtext">Clicking anywhere on this modal opens direct WhatsApp support</p>
-  </div>
-</div>
 
 <!-- ========================================================
      NAVBAR
@@ -1060,7 +836,7 @@ footer {
 </section>
 
 <!-- ========================================================
-     SECTION 1: POLICY-SAFE FEATURE PILLARS (NO POLICY RISK NUMBERS)
+     SECTION 1: FEATURE PILLARS
      ======================================================== -->
 <section class="metrics-island-section">
   <div class="metrics-island">
@@ -1096,7 +872,7 @@ footer {
 </section>
 
 <!-- ========================================================
-     SECTION 2: 3-COLUMN HOLIDAY PACKAGES CARDS WITH IMAGES
+     SECTION 2: 3-COLUMN HOLIDAY PACKAGES CARDS
      ======================================================== -->
 <section class="packages-section" id="packages">
   <div class="section-title-wrap">
@@ -1361,38 +1137,6 @@ footer {
   // Assign WhatsApp URL to all [data-wa] links
   document.querySelectorAll("[data-wa]").forEach(function(link) {
     link.href = whatsappUrl;
-  });
-
-  // Modal Popup Logic
-  const autoModal = document.getElementById("autoModal");
-  const modalCard = document.getElementById("modalCard");
-  const modalCloseBtn = document.getElementById("modalCloseBtn");
-
-  // Show Modal Automatically on page load
-  window.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-      autoModal.classList.add("active");
-    }, 250);
-  });
-
-  // Click inside Modal Card -> Redirects to WhatsApp
-  modalCard.addEventListener("click", function(e) {
-    if (!e.target.closest("#modalCloseBtn")) {
-      window.open(whatsappUrl, "_blank");
-    }
-  });
-
-  // Close Modal on Button Click
-  modalCloseBtn.addEventListener("click", function(e) {
-    e.stopPropagation();
-    autoModal.classList.remove("active");
-  });
-
-  // Close Modal on Overlay Click (Outside Card)
-  autoModal.addEventListener("click", function(e) {
-    if (e.target === autoModal) {
-      autoModal.classList.remove("active");
-    }
   });
 </script>
 
